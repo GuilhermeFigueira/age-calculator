@@ -18,7 +18,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={poppins.className}>{children}</body>
+			<body className={`bg-off_white ${poppins.className} h-screen`}>
+				{children}
+			</body>
 		</html>
 	);
 }
