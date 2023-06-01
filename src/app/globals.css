@@ -6,13 +6,13 @@
 	@apply flex flex-col;
 }
 .input input {
-	@apply outline-1 outline-purple ring-1 ring-gray-light rounded-xl h-14 max-w-[9.5rem] p-4 font-bold;
+	@apply outline-1 outline-purple ring-1 ring-gray-light rounded-xl h-14 max-w-[9.5rem] p-4 font-bold text-2xl placeholder:text-3xl;
 }
 .input label {
 	@apply uppercase text-gray-smokey font-bold text-sm p-1 pl-0;
 }
 .results {
-	@apply text-6xl font-bold italic;
+	@apply text-6xl font-bold italic md:text-8xl transition-all;
 }
 .results strong {
 	@apply text-purple;
@@ -21,10 +21,10 @@
 	@apply flex flex-col;
 }
 .input_error input {
-	@apply outline-light_red ring-1 ring-light_red rounded-xl h-14 max-w-[9.5rem] p-4 font-bold;
+	@apply outline-light_red ring-1 ring-light_red rounded-xl h-14 max-w-[9.5rem] p-4 font-bold placeholder:text-3xl;
 }
 .input_error label {
-	@apply uppercase text-gray-smokey font-bold text-sm p-1 pl-0;
+	@apply uppercase text-light_red font-bold text-sm p-1 pl-0;
 }
 h1 {
 	@apply italic text-light_red text-xs mt-2;
