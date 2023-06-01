@@ -17,3 +17,15 @@
 .results strong {
 	@apply text-purple;
 }
+.input_error {
+	@apply flex flex-col;
+}
+.input_error input {
+	@apply outline-light_red ring-1 ring-light_red rounded-xl h-14 max-w-[9.5rem] p-4 font-bold;
+}
+.input_error label {
+	@apply uppercase text-gray-smokey font-bold text-sm p-1 pl-0;
+}
+h1 {
+	@apply italic text-light_red text-xs mt-2;
+}
