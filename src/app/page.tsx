@@ -61,6 +61,10 @@ export default function Home() {
 									value: 1,
 									message: "Must be a valid day",
 								},
+								max: {
+									value: 31,
+									message: "Must be a valid day",
+								},
 							})}
 							placeholder="DD"
 						/>
@@ -102,7 +106,7 @@ export default function Home() {
 									message: "Must be a valid year",
 								},
 								max: {
-									value: current.getFullYear(),
+									value: current.getFullYear() - 1,
 									message: "Must be in the past",
 								},
 							})}
@@ -131,6 +135,24 @@ export default function Home() {
 					<strong>{days == null ? "--" : days}</strong> days
 				</div>
 			</footer>
+			<div className="text-center pt-4 justify-self-end font-bold text-sm italic">
+				Challenge by{" "}
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+				>
+					Frontend Mentor
+				</a>
+				. Coded by{" "}
+				<a
+					href="https://github.com/guilhermefigueira"
+					target="_blank"
+					className="text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-sky-700 font-bold hover:text-lg hover:tracking-widest transition-all "
+				>
+					Guilherme Figueira
+				</a>
+				.
+			</div>
 		</main>
 	);
 }
