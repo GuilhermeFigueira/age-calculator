@@ -9,6 +9,8 @@ const poppins = Poppins({
 
 export const metadata = {
 	title: "Frontend Mentor | Age Calculator App",
+	description:
+		"A frontendmentor website where you can calculate your full age!",
 };
 
 export default function RootLayout({
